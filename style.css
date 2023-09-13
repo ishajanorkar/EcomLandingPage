@@ -1,0 +1,738 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+*{
+  font-family: 'Nunito',sans-serif;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+ 
+  
+}
+
+html{
+  font-size: 62.5%;
+}
+
+section{
+  padding: 2rem 9%;
+}
+
+body{
+  background: rgb(248,248,248);
+  background: linear-gradient(90deg, rgba(248,248,248,1) 48%, rgba(211,76,248,0.2498249299719888) 96%);
+}
+
+/* header */
+
+.header{
+  width: 100vw;
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  z-index: 2;
+  background: rgb(248,248,248);
+  background: linear-gradient(90deg, rgba(248,248,248,1) 0%, rgb(8, 0, 10) 58%);
+}
+
+.header .logo img{
+  height: 6rem;
+}
+
+.header .navbar #close{
+  display: none;
+  position: absolute;
+  top: 4rem;
+  right: 2rem;
+  cursor: pointer;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.header .navbar a{
+  font-size: 2rem;
+  margin-right: 2rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header .navbar a:hover{
+  /* color: rgb(243, 243, 100); */
+  border-bottom: 3px solid rgb(243, 243, 100);
+}
+
+.header #menu{
+  display: none;
+  cursor: pointer;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+/* ends */
+
+
+/* home */
+
+.home{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.home .content{
+  flex: 1 1 40rem;
+  padding-top: 5rem;
+}
+
+.home .content .title{
+  font-size: 6rem;
+  color: #fff;
+  text-shadow: 3px 2px 8px #2d2c2c, 3px 3px 5px #0f0e0e;
+  text-transform: uppercase;
+}
+
+.home .content .title span{
+  text-transform: uppercase;
+  color: rgba(234, 220, 230, 0.909);
+  text-shadow: 5px 3px 8px #940381, 3px 3px 5px #8800ff;
+}
+
+.home .content .description{
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 1rem 0;
+    
+}
+
+.home .content .btn{
+  margin-top: 3rem;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  border-top: 4px solid #940381;
+  border-left: 4px solid #8800ff;
+  border-bottom: 4px solid #8800ff;
+  border-right: 4px solid #940381;
+  color: #e10ec5;
+  background: #fff;
+  box-shadow: 0 0 6px #940381, 0 0 6px #8800ff;
+}
+
+.home .content .btn:hover{
+  letter-spacing: .2rem;
+  color: #fff;
+  background: #940381;
+  border: 2px solid #940381;
+  box-shadow: 0 0 6px #dbca09, 0 0 6px #ec8f0c;
+}
+
+.home .image{
+  flex: 1 1 43rem;
+} 
+
+.backSplash{
+  width: 730px ;
+  position: relative;
+  left: 17%;
+}
+
+.heroImg{
+  width: 450px;
+  position: absolute;
+  left: 63%;
+  top: 8%;
+}
+
+
+/* contact  */
+
+.contact{
+  width: 100vw;
+  height: 100vh;
+  
+}
+
+.contact h1{
+  font-size: 3.5rem;
+  color: #353535;
+  text-shadow: 1px 1px 4px #2d2c2c, 1px 1px 3px #0f0e0e;
+  text-transform: capitalize;
+}
+
+.contact h3{
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  color: rgba(236, 90, 195, 0.909);
+  text-shadow: 1px 1px 2px #940381, 1px 1px 2px #8800ff;
+}
+
+.labels{
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 1%;
+}
+
+.oneinput{
+  padding: 1%;
+  width: 90%;
+}
+
+.frinput{
+  font-size: 1.5rem;
+  text-transform: none;
+  border: none;
+  border-bottom: 3px solid #8800ff;
+  border-radius: 10px !important;
+}
+.frinput:focus{
+  font-size: 1.7rem;
+  height: 6rem;
+  background-color: #ece6f184;
+}
+
+.contactfrm{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  border: 2px solid rgb(243, 243, 100);
+}
+
+.submitBtn{
+  margin-top: 3rem;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 25px 8px 25px;
+  border-radius: 50px;
+  transition: 0.5s;
+  border-top: 4px solid #940381;
+  border-left: 4px solid #8800ff;
+  border-bottom: 4px solid #8800ff;
+  border-right: 4px solid #940381;
+  color: #e10ec5;
+  background: #fff;
+  box-shadow: 0 0 6px #940381, 0 0 6px #8800ff;
+}
+
+.submitBtn:hover{
+  letter-spacing: .2rem;
+  color: #fff;
+  background: #940381;
+  border: 2px solid #940381;
+  box-shadow: 0 0 6px #dbca09, 0 0 6px #ec8f0c;
+}
+
+
+.input-group span{
+  position: absolute;
+  bottom: 0px;
+  left: 100%;
+  font-size: 1.2rem;
+  color: red;
+}
+
+.submitEr{
+  position: absolute;
+  left: 42%;
+  top: 95%;
+  font-size: 1.2rem;
+  color: red !important;
+}
+
+.snapcheck{
+  width: 50px;
+}
+
+/* Pop Up */
+
+.popUp{
+  position: absolute;
+  left: 32%;
+  top: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: none;
+  width: 500px;
+}
+
+.openPopup{
+  display: block;
+  transform: translate(-50%, -50%) scale(1);
+  top: 50%;
+}
+
+.popCheck{
+  width: 50px;
+  
+}
+
+.poptanks{ 
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: rgba(236, 90, 195, 0.909);
+  text-shadow: 1px 1px 2px #940381, 1px 1px 2px #8800ff;
+}
+
+.popmessage{
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 4px #2d2c2c, 1px 1px 3px #0f0e0e;
+  text-transform: capitalize;
+}
+.popokbtn{
+  width: 80px;
+  margin-top: 3rem;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 5px 15px 5px 15px;
+  border-radius: 50px;
+  transition: 0.5s;
+  border-top: 4px solid #940381;
+  border-left: 4px solid #8800ff;
+  border-bottom: 4px solid #8800ff;
+  border-right: 4px solid #940381;
+  color: #e10ec5;
+  background: #fff;
+  box-shadow: 0 0 6px #940381, 0 0 6px #8800ff;
+}
+
+.popokbtn:hover{
+  letter-spacing: .2rem;
+  color: #fff;
+  background: #940381;
+  border: 2px solid #940381;
+  box-shadow: 0 0 6px #dbca09, 0 0 6px #ec8f0c;
+}
+
+
+/* end */
+
+
+
+
+@media only screen and (max-width:768px){
+
+  .header #menu{
+    display: inline-block;
+  }
+
+  .header .navbar{
+    position: fixed;
+    top: 0; right: -105%;
+    width: 30rem;
+    background: rgba(0, 0, 0, 0.309);
+    backdrop-filter: blur(50px);
+    transition: .5s;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    z-index: 1200;
+  }
+
+  .header .navbar.active{
+    right: 0;
+  }
+
+  .header .navbar #close{
+    display: block;
+  }
+
+  .header .navbar a{
+    display: block;
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .home .content{
+    padding-top: 9.5rem;
+  }
+
+  
+  .home .content .title{
+    font-size: 4rem;
+  }
+
+  .home .content .description{
+    font-size: 1.6rem;
+  }
+
+
+  .home .content .title{ 
+    font-size: 3rem;  
+    padding-top: 6.5rem;
+  }
+
+  .home .content .description{
+    font-size: 1.5rem;
+      
+  }
+
+  .home .content .btn{
+    
+    font-size: 12px;
+    padding: 5px 15px 5px 15px;
+   
+  }
+
+  .home .image{
+    flex: 1 1 0rem;
+  } 
+
+  .backSplash{
+    width: 55em !important;
+   
+  }
+
+  .heroImg{
+    width: 35em !important;
+    left: 25%  !important;
+    top: 65%  !important;
+  }
+
+  .contact h1{
+    margin-top: 12em  !important;
+    font-size: 2.2rem;
+  }
+
+  .contact h3{
+    font-size: 1.8rem;
+    
+  }
+
+  .labels{
+    font-size: 1rem;
+   
+  }
+
+  .submitBtn{
+    font-size: 12px;
+    padding: 5px 15px 5px 15px;
+  }
+
+  .frinput{
+    font-size: 0.9rem;
+
+  }
+
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+
+
+  .home .content .title{ 
+    font-size: 3rem;  
+    padding-top: 6.5rem;
+  }
+
+  .home .content .description{
+    font-size: 1.5rem;
+      
+  }
+
+  .home .content .btn{
+    
+    font-size: 12px;
+    padding: 5px 15px 5px 15px;
+   
+  }
+
+
+  .backSplash{
+    width: 40em !important;
+
+  }
+
+  .heroImg{
+    width: 270px;
+    left: 6% !important;
+    top: 60% !important;
+  }
+
+  .contact h1{
+    margin-top: 10em !important;
+    font-size: 2.2rem;
+  }
+
+  .contact h3{
+    font-size: 1.8rem;
+    
+  }
+
+  .labels{
+    font-size: 1rem;
+   
+  }
+
+  .submitBtn{
+    font-size: 12px;
+    padding: 5px 15px 5px 15px;
+  }
+
+  .frinput{
+    font-size: 0.9rem;
+
+  }
+
+
+  
+  
+}
+
+@media only screen and (max-width: 450px){
+
+  .backSplash{
+    width: 35em !important;
+  }
+
+  .frinput{
+    font-size: 1rem;
+
+  }
+
+  .heroImg{
+    width: 270px;
+    left: 6% !important;
+    top: 65% !important;
+  }
+
+
+}
+
+
+@media only screen and (max-width:991px){
+  html{
+    font-size: 55%;
+  }
+
+  .header{
+    padding: 2rem;
+  }
+
+  section{
+    padding: 2rem;
+  }
+
+  .home .content .title{ 
+    font-size: 3rem;  
+  }
+
+  .home .content .description{
+    font-size: 1.5rem;
+      
+  }
+
+  .home .content .btn{
+    
+    font-size: 12px;
+    padding: 5px 15px 5px 15px;
+   
+  }
+
+  .home .image{
+    flex: 1 1 43rem;
+  } 
+
+  .backSplash{
+    width: 38em  ;
+    /* position: absolute; */
+  }
+
+  .heroImg{
+    width: 40em;
+
+  }
+
+  .contact h1{
+    margin-top: 15em;
+    font-size: 2.2rem;
+  }
+
+  .contact h3{
+    font-size: 1.8rem;
+    
+  }
+
+  .labels{
+    font-size: 1rem;
+   
+  }
+
+  .submitBtn{
+    font-size: 12px;
+    padding: 5px 15px 5px 15px;
+  }
+
+  .frinput{
+    font-size: 0.9rem;
+
+  }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .home .content .title{ 
+    font-size: 4rem;  
+
+  }
+
+  .home .content .description{
+    font-size: 1.5rem;
+      
+  }
+
+  .home .content .btn{
+    
+    font-size: 13px;
+    padding: 6px 15px 6px 15px;
+   
+  }
+
+
+
+  .home .image{
+    flex: 1 1 43rem;
+  } 
+
+  .backSplash{
+    width: 45em;
+    
+  }
+
+  .heroImg{
+    width: 35em;
+    left: 55%;
+    top: 16%;
+   
+  }
+
+  .contact h1{
+    font-size: 2.5rem;
+    margin-top: 4em;
+  }
+
+  .contact h3{
+    font-size: 2rem;
+    
+  }
+
+  .labels{
+    font-size: 1.5rem;
+   
+  }
+
+  .submitBtn{
+    font-size: 13px;
+    padding: 6px 15px 6px 15px;
+  }
+
+  .frinput{
+    font-size: 0.9rem;
+
+  }
+} 
+
+@media only screen and (min-width: 1200px) {
+  .home .content .title{ 
+    font-size: 6rem;  
+
+  }
+
+  .home .content .description{
+    font-size: 2rem;
+      
+  }
+
+  .home .content .btn{
+    
+    font-size: 16px;
+    padding: 10px 30px 10px 30px;
+   
+  }
+
+
+
+  .home .image{
+    flex: 1 1 43rem;
+  } 
+
+  .backSplash{
+    width: 58em;
+    
+  }
+
+  .heroImg{
+    width: 43em;
+    left: 58%;
+    top: 16%;
+   
+  }
+
+  .contact h1{
+    font-size: 3.5rem;
+    margin-top: 2em;
+  }
+
+  .contact h3{
+    font-size: 2.5rem;
+    
+  }
+
+  .labels{
+    font-size: 2rem;
+   
+  }
+
+  .submitBtn{
+    font-size: 16px;
+    padding: 10px 30px 10px 30px;
+  }
+
+  .frinput{
+    font-size: 1.5rem;
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
